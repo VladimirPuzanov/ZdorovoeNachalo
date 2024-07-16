@@ -1,3 +1,52 @@
+/* fonts include */
+@font-face {
+	font-family: 'Exo 2 Semi';
+	src: url('Exo2-SemiBold.eot');
+	src: local('Exo 2 Semi Bold'), local('Exo2-SemiBold'),
+			url('/assets/fonts/exo2/Exo2-SemiBold.woff2') format('woff2'),
+			url('/assets/fonts/exo2/Exo2-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Exo 2';
+	src: local('Exo 2 Bold'), local('Exo2-Bold'),
+			url('/assets/fonts/exo2/Exo2-Bold.woff2') format('woff2'),
+			url('/assets/fonts/exo2/Exo2-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+
+@font-face {
+	font-family: 'Roboto';
+	src: local('Roboto'), local('Roboto-Regular'),
+			url('/assets/fonts/roboto/Roboto-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: local('Open Sans Regular'), local('OpenSans-Regular'),
+			url('/assets/fonts/openSans/OpenSans-Regular.woff2') format('woff2'),
+			url('/assets/fonts/openSans/OpenSans-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('OpenSans-SemiBold.eot');
+	src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+			url('/assets/fonts/openSans/OpenSans-SemiBold.woff2') format('woff2'),
+			url('/assets/fonts/openSans/OpenSans-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
 /* reset styles */
 * {
 	padding: 0;
@@ -91,4 +140,398 @@ h6 {
 
 picture {
 	display: block;
+}
+
+/* global blocks */
+.content{
+	max-width: 1120px;
+	margin: 0 auto;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+.primary-button{
+	font-family: "Open Sans", sans-serif;
+	background: linear-gradient(0deg, #8BCA3B 0%, #61A41A 100%);
+	color: #FFFFFF;
+}
+
+.secondary-button{
+	font-family: "Open Sans", sans-serif;
+	border: 1px solid #8BCA3B;
+	color: #74B629;
+}
+
+.medium-button{
+	font-size: 14px;
+	line-height: 18px;
+	padding: 12px 16px;
+	border-radius: 10px;
+	font-weight: 600;
+}
+
+/* intro */
+.intro__content{
+	display: flex;
+	gap: 48px;
+	padding: 40px 0;
+	align-items: center;
+}
+
+.intro__pic{
+	min-width: 359px;
+}
+
+.intro__pic::after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 5px;
+	background: linear-gradient(0deg, #8BCA3B 0%, #61A41A 100%);
+	border-radius: 2px;
+}
+
+.intro-title{
+	font-family: 'Exo 2', sans-serif;
+	font-size: 48px;
+	line-height: 58px;
+	color: #323B44;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.intro__subtitle{
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	line-height: 19px;
+	color: #323B44E5;
+	margin-bottom: 15px;
+}
+
+.intro__pluses{
+	display: flex;
+	gap: 20px;
+	padding: 20px 40px;
+	border: 1px solid #74B629;
+	box-shadow: 0px 0px 10px 0px #74B62926 inset;
+	border-radius: 15px;
+	max-width: 650px;
+	margin-bottom: 30px;
+}
+
+.intro__plus{
+	flex: 1;
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.intro__plus picture{
+	width: 40px;
+	height: 40px;
+	margin-bottom: 10px;
+}
+
+.intro__buttons{
+	display: flex;
+	gap: 10px;
+	max-width: 444px;
+}
+
+.intro__buttons>*{
+	flex: 1;
+}
+
+/* about clinic */
+.about-clinic{
+	margin: 80px 0;
+}
+
+.about-clinic__content{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.about-clinic__col{
+	max-width: 520px;
+}
+
+.about-clinic__title{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	margin-bottom: 30px;
+}
+
+.about-clinic__text{
+	font-family: "Open Sans", sans-serif;
+	color: #323B44CC;
+	line-height: 22.4px;
+	font-size: 16px;
+}
+
+.about-clinic__pic{
+	max-width: 437px;
+}
+
+/* activite-lines */
+.activite-lines{
+	padding: 80px 0;
+	background-color: #F9F9F9;
+}
+
+.activite-lines__title{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.activite-lines__title::after{
+	content: "";
+	display: block;
+	width: 64px;
+	height: 6px;
+	border-radius: 7px;
+	background: linear-gradient(0deg, #8BCA3B 0%, #61A41A 100%);
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+.activite-lines__cards{
+	display: flex;
+	align-items: stretch;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.activite-lines__card{
+	flex-basis: calc(25% - 15px);
+}
+
+.activite{
+	padding: 20px 20px 0 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.activite::after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 5px;
+	border-radius: 2px;
+	background: linear-gradient(0deg, #8BCA3B 0%, #61A41A 100%);
+}
+
+.activite__icon{
+	height: 55px;
+	width: 55px;
+	margin-bottom: 20px;
+}
+
+.activite__title{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	color: #323B44;
+	margin-bottom: 12px;;
+}
+
+.activite__des{
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20.8px;
+	color:#798A9A;
+	padding-bottom: 25px;
+	margin-bottom: auto;
+}
+
+/* steps */
+.steps{
+	padding: 80px 0;
+}
+
+.steps__title{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.steps__title::after{
+	content: "";
+	display: block;
+	height: 6px;
+	width: 64px;
+	border-radius: 7px;
+	margin: 0 auto;
+	margin-top: 15px;
+	background: linear-gradient(0deg, #8BCA3B 0%, #61A41A 100%);
+}
+
+.steps__cards{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: space-between;
+}
+
+.step{
+	position: relative;
+	display: flex;
+	flex-basis: calc(33.3333% - 30px);
+	gap: 16px;
+	align-items: center;
+	padding: 20px;
+	border-radius: 10px;
+	border: 1px solid #74B6294D;
+	box-shadow: 0px 0px 20px 0px #00000014;
+	overflow: hidden;
+}
+
+.step__text{
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 21.6px;
+	color: #323B44;
+}
+
+.step__icon{
+	min-width: 50px;
+	height: 50px;
+}
+
+.step__number{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 700;
+	font-size: 120px;
+	line-height: 144px;
+	position: absolute;
+	color: #74B6291A;
+	right: 0px;
+	top: -28px;
+}
+
+/* pricelist */
+.pricelist__title{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.pricelist__title::after{
+	content: "";
+	display: block;
+	height: 6px;
+	width: 64px;
+	border-radius: 7px;
+	margin: 0 auto;
+	margin-top: 15px;
+	background: linear-gradient(0deg, #8BCA3B 0%, #61A41A 100%);
+}
+
+.pricelist__attention{
+	max-width: 900px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	line-height: 22.4px;
+	color: #323B44E5;
+	margin-bottom: 30px;
+}
+
+.pricelist-card{
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #74B629;
+	border-radius: 10px;
+}
+
+.pricelist-card__title{
+	padding: 20px 0;
+	color: #fff;
+	background-color: #74B629;
+	font-family: "Exo 2", sans-serif;
+	font-size: 20px;
+	line-height: 26px;
+	text-align: center;
+	border-radius: 6px;
+	margin-bottom: 20px;
+}
+
+.pricelist-card__block{
+	margin-bottom: 18px;
+	padding: 0 20px;
+}
+
+.pricelist-card__block p{
+	font-family: "Open Sans", sans-serif;
+	color: #323B44E5;
+	font-size: 14px;
+	line-height: 19.6px;
+	margin-bottom: 8px;
+}
+
+.pricelist-card__block p:first-child{
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20.8px;
+}
+
+.pricelist-card__block p:last-child{
+	margin-bottom: 0;
+}
+
+.pricelist-card__block ul{
+	display: flex;
+	gap: 8px;
+	flex-direction: column;
+}
+
+.pricelist-card__block ul li{
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18.2px;
+	text-decoration: underline;
+	color: #323B44;
+	display: flex;
+	align-items: center;
+}
+
+.pricelist-card__block ul li::before{
+	content: "";
+	display: block;
+	min-width: 6px;
+	height: 6px;
+	background-color: #74B629;
+	margin-right: 8px;
+	border-radius: 50%;
+}
+
+.pricelist-card__timeprice{
+	border: 1px solid #74B629;
+	margin: 0 20px;
+	border-radius: 10px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
 }
