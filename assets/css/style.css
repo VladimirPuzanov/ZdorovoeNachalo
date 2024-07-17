@@ -1,5 +1,15 @@
 /* fonts include */
 @font-face {
+	font-family: 'Exo 2';
+	src: url('Exo2-Medium.eot');
+	src: local('Exo 2 Medium'), local('Exo2-Medium'),
+			url('/assets/fonts/exo2/Exo2-Medium.woff2') format('woff2'),
+			url('/assets/fonts/exo2/Exo2-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: 'Exo 2 Semi';
 	src: url('Exo2-SemiBold.eot');
 	src: local('Exo 2 Semi Bold'), local('Exo2-SemiBold'),
@@ -705,9 +715,13 @@ img{
 
 /* article */
 .article__card{
+	box-shadow: 0px 2px 12px 0px #0000001A;
 	display: flex;
+	align-items: flex-start;
 	gap: 90px;
 	padding: 30px 45px;
+	background-color: #FFF;
+	border-radius: 10px;
 }
 
 .article__content-table-title{
@@ -749,8 +763,58 @@ img{
 .article__doctor{
 	display: flex;
 	gap: 25px;
+	padding: 20px;
+	border-radius: 10px;
+	border: solid 1px #8BCA3B;
 }
 
 .article__doctor-photo{
 	max-width: 171px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+/* перепроверить шрифты и подключить */
+.article__doctor-text{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20.8px;
+	color: #323B44B2;
+	margin-bottom: 10px;
+}
+
+.article__doctor-text::after{
+	content: "";
+	display: block;
+	width: 100px;
+	height: 4px;
+	background: linear-gradient(0deg, #8BCA3B 0%, #61A41A 100%);
+	border-radius: 7px;
+	margin-top: 10px;
+}
+
+.article__doctor-name{
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 28.6px;
+	color: #323B44;
+	margin-bottom: 5px;
+}
+
+.article__doctor-spec{
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20.8px;
+	color:#323B44CC;
+	margin-bottom: 35px;
+}
+
+.article__doctor-date{
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18.2px;
+	color: #323B4499;
 }
