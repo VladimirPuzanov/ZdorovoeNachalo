@@ -1,7 +1,7 @@
-const pricelistSwiperCheck = document.querySelectorAll('pricelist');
+const pricelistSwiperCheck = document.querySelectorAll('.pricelist');
 if (pricelistSwiperCheck.length > 0) {
 	pricelistSwiperCheck.forEach((slider) => {
-		const pricelistSlider = new Swiper(slider.querySelector('pricelist__swiper'), {
+		const pricelistSlider = new Swiper(slider.querySelector('.pricelist__swiper'), {
 			direction: 'horizontal',
 			slidesPerView: 1.1,
 			grabCursor: true,
@@ -19,7 +19,10 @@ if (pricelistSwiperCheck.length > 0) {
 					slidesPerView: 3,
 					spaceBetween: 20,
 				}
-			}
+			},
+			pagination: {
+        el: ".pricelist__swiper-pagination",
+      },
 		});
 	})
 }
