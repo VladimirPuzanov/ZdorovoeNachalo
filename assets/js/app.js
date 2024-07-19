@@ -26,3 +26,32 @@ if (pricelistSwiperCheck.length > 0) {
 		});
 	})
 }
+
+const reviewSlider = document.querySelectorAll('.review');
+if (reviewSlider.length > 0) {
+	reviewSlider.forEach((slider) => {
+		const reviewSlider = new Swiper(slider.querySelector('.review__swiper'), {
+			direction: 'horizontal',
+			slidesPerView: 1.1,
+			grabCursor: true,
+			spaceBetween: 10,
+			navigation: {
+				nextEl: slider.querySelector('nextButton'),
+				prevEl: slider.querySelector('prevButton'),
+			},
+			breakpoints: {
+				360: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				},
+				950: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				}
+			},
+			pagination: {
+        el: ".review__swiper-pagination",
+      }
+		});
+	})
+}
