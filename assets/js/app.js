@@ -7,8 +7,8 @@ if (pricelistSwiperCheck.length > 0) {
 			grabCursor: true,
 			spaceBetween: 10,
 			navigation: {
-				nextEl: slider.querySelector('nextButton'),
-				prevEl: slider.querySelector('prevButton'),
+				nextEl: slider.querySelector('.next-btn'),
+				prevEl: slider.querySelector('.prev-btn'),
 			},
 			breakpoints: {
 				360: {
@@ -36,8 +36,8 @@ if (reviewSlider.length > 0) {
 			grabCursor: true,
 			spaceBetween: 10,
 			navigation: {
-				nextEl: slider.querySelector('nextButton'),
-				prevEl: slider.querySelector('prevButton'),
+				nextEl: slider.querySelector('.next-btn'),
+				prevEl: slider.querySelector('.prev-btn'),
 			},
 			breakpoints: {
 				360: {

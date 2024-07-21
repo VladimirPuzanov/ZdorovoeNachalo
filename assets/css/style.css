@@ -234,7 +234,7 @@ img{
 	font-family: "Open Sans";
 	font-weight: 700;
 	font-size: 12.74px;
-	line-height: 15px;
+	line-height: 17px;
 	color: #323B44;
 	margin-bottom: 4px;
 }
@@ -245,6 +245,148 @@ img{
 	font-style: 8.5px;
 	line-height: 11px;
 	color: #00000099;
+}
+
+.swiper__nav-wrapper{
+	position: relative;
+}
+
+.swiper__nav-buttons{
+	width: calc(100% + 140px);
+	display: flex;
+	position: absolute;
+	left: -70px;
+	top: calc(50% - 25px);
+	justify-content: space-between;
+	z-index: 10;
+}
+
+.prev-btn{
+	width: 50px;
+	height: 50px;
+	top: calc(50% - 25px);
+	z-index: 10;
+	transform: rotate(180deg);
+}
+
+.next-btn{
+	width: 50px;
+	height: 50px;
+	top: calc(50% - 25px);
+}
+
+.swiper-button-disabled{
+	opacity: 0.5;
+	transition: 0.3s;
+}
+
+/* header */
+.header__contact{
+	display: flex;
+	gap: 10px;
+}
+
+.header__contacts{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 17px 0;
+}
+
+.header__contact picture{
+	width: 44px;
+	height: 44px;
+}
+
+.header__contact p{
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	line-height: 18.2px;
+}
+
+.header__contact p span{
+	color: #74B629;
+	font-weight: 600;
+}
+
+.header__contact p:first-child{
+	color: #323B44CC;
+	margin-bottom: 5px;
+}
+
+.header__contact p:last-child{
+	color: #323B44;
+}
+
+.header__buttons{
+	display: flex;
+	gap: 10px;
+	width: 100%;
+	max-width: 444px;
+}
+
+.header__buttons>*{
+	flex: 1;
+}
+
+.header__telephone{
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 23.4px;
+	color: #323B44;
+}
+
+.header__logo-row{
+	display: flex;
+}
+
+.header__logo-row>p{
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
+	font-style: 12px;
+	line-height: 15.6px;
+	color: #323B44E5;
+	padding-left: 15px;
+	align-self: center;
+	margin-right: auto;
+}
+
+.header__logo{
+	padding-right: 15px;
+	border-right: 1px solid #323B440D;
+}
+
+.header__navigation{
+	display: block;
+}
+
+.header__navigation ul{
+	display: flex;
+	gap: 25px;
+	height: 100%;
+}
+
+.header__navigation ul li{
+	display: flex;
+	align-items: center;
+}
+
+.header__navigation ul li a{
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 18.2px;
+	color: #323B44;
+}
+
+.header__navigation ul li::after{
+	content: "";
+	display: block;
+	width: 11px;
+	height: 13px;
+	margin-left: 4px;
+	background-image: url("/assets/img/icons/headerArrow.svg");
 }
 
 /* text-block */
