@@ -51,7 +51,7 @@ if (reviewSlider.length > 0) {
 			},
 			pagination: {
         el: ".review__swiper-pagination",
-      }
+      },
 		});
 	})
 }
