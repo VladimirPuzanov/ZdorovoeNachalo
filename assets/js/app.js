@@ -1,3 +1,5 @@
+
+
 const pricelistSwiperCheck = document.querySelectorAll('.pricelist');
 if (pricelistSwiperCheck.length > 0) {
 	pricelistSwiperCheck.forEach((slider) => {
@@ -54,4 +56,39 @@ if (reviewSlider.length > 0) {
       },
 		});
 	})
+}
+
+faq = document.querySelectorAll(".faq__question");
+if(faq.length > 0){
+	faq.forEach(question => {
+		question.addEventListener("click", function () {
+			button = this.querySelector(".faq__button");
+			answer = this.nextElementSibling;
+			button.classList.toggle("faq__button_active");
+			if(answer.style.maxHeight){
+				answer.removeAttribute("style");
+			}
+			else{
+				answer.style.maxHeight = answer.scrollHeight + "px";
+			}
+		})
+	});
+}
+
+window.onscroll = function () { fixedNavbar() };
+
+fixedHeader = document.querySelector(".header__logo-row-wrapper");
+if(fixedHeader){
+	var sticky = fixedHeader.offsetTop;
+	function fixedNavbar() {
+	if (window.scrollY >= sticky) {
+		if (!fixedHeader.classList.contains("header__logo-row-wrapper_active")) {
+			fixedHeader.classList.add("header__logo-row-wrapper_active");
+			document.querySelector(".intro").style.marginTop = fixedHeader.scrollHeight + "px";
+		}
+	} else {
+		fixedHeader.classList.remove("header__logo-row-wrapper_active");
+		document.querySelector(".intro").removeAttribute("style");
+	}
+}
 }

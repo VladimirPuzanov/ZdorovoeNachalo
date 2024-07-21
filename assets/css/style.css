@@ -337,8 +337,25 @@ img{
 	color: #323B44;
 }
 
+.header__logo-row-wrapper{
+	width: 100%;
+	background-color: #FFF;
+}
+
 .header__logo-row{
 	display: flex;
+	padding: 13px 0;
+	width: 100%;
+	max-width: 1120px;
+	margin: 0 auto;
+}
+
+.header__logo-row-wrapper_active{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	box-shadow: 0px 2px 12px 0px #0000001A;
 }
 
 .header__logo-row>p{
@@ -387,6 +404,10 @@ img{
 	height: 13px;
 	margin-left: 4px;
 	background-image: url("/assets/img/icons/headerArrow.svg");
+}
+
+@media(max-width: 1150px){
+
 }
 
 /* text-block */
@@ -1379,7 +1400,7 @@ img{
 }
 
 .faq__button_active::before{
-	height: 0px;
+	transform: rotate(90deg);
 }
 
 .faq__answer{
@@ -1390,6 +1411,7 @@ img{
 	border-radius: 0 0 10px 10px;
 	overflow: hidden;
 	max-height: 0;
+	transition: 0.3s;
 }
 
 .faq__answer p{
