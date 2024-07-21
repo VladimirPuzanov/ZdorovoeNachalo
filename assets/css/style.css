@@ -1904,3 +1904,161 @@ img{
 	background-image: url("/assets/img/icons/arrow.svg");
 	margin-left: 10px;
 }
+
+/* popups */
+.popup {
+	height: 100vh;
+	left: 50%;
+	opacity: 0;
+	pointer-events: none;
+	position: fixed;
+	top: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	width: 100%;
+	z-index: 1000;
+	transition: opacity 0.4s ease;
+	overflow-y: auto;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.popup__body {
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 60px 15px 20px;
+}
+
+.popup.open {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.popup__content {
+	border-radius: 20px !important;
+	width: 100%;
+	max-width: 725px;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	border-radius: 6px;
+	gap: 10px;
+	padding: 40px 30px 30px 30px;
+	transition: transform 0.3s linear;
+	background: #fff;
+	transform: rotateY(90deg);
+}
+
+.popup__content_call {
+	max-width: 440px;
+}
+
+.popup.open .popup__content {
+	transform: rotateY(0);
+}
+
+.popup__title {
+	width: 100%;
+	font-family: "Exo 2", sans-serif;
+	font-size: 46px;
+	line-height: 54px;
+	font-weight: 600;
+	color: #74B629;
+	text-align: center;
+}
+
+.popup__subtitle {
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	line-height: 26px;
+	color: #38383880;
+	margin-bottom: 40px;
+	text-align: center;
+	width: 100%;
+	display: block;
+}
+
+.popup__input {
+	width: 100%;
+	padding: 14px 5px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	line-height: 20.8px;
+	width: 100%;
+	border-bottom: 2px solid #496B7333;
+}
+
+.popup__textarea {
+	width: 100%;
+	padding: 14px 5px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	border-bottom: 2px solid #496B7333;
+	line-height: 20.8px;
+	min-height: 150px;
+	max-height: 150px;
+	overflow-y: auto;
+}
+
+.popup__form-subtitle {
+	display: block;
+	font-size: 28px;
+	font-weight: 400;
+	margin-bottom: 24px;
+	width: 100%;
+	text-align: left;
+}
+
+.popup__form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.popup__politic {
+	font-family: "Open Sans", sans-serif;
+	color: #8492B0CC;
+	font-size: 13px;
+	line-height: 16px;
+}
+
+.popup__form>* {
+	-ms-flex-preferred-size: 100%;
+	flex-basis: 100%;
+}
+
+.popup__btn {
+	margin-top: 0;
+}
+
+.popup__btn {
+	width: 100%;
+}
+
+.close-popup {
+	cursor: pointer;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 20px;
+	right: 20px;
+	z-index: 1000;
+	width: 14px;
+	height: 14px;
+	transition: transform 0.4s linear;
+}
+
+.close-popup img {
+	height: 100%;
+}
+
+.close-popup:hover {
+	transform: rotate(180deg);
+}
