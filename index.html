@@ -61,6 +61,10 @@
 							<p class="logo__upper-text">ЗДОРОВОЕ<br> НАЧАЛО</p>
 							<p class="logo__lower-text">наркологическая клиника</p>
 						</div>
+						<div class="logo__contact-item_mobile">
+							<a href="+70000000000"> +7 (000) 000-00-00</a>
+							<p>Анонимно, 24/7 </p>
+						</div>
 						<button class="header__burger-button">
 							<svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="80"
 								onclick="this.classList.toggle('active')">
@@ -126,7 +130,40 @@
 								</ul>
 							</li>
 						</ul>
+						<div class="header__search-wrapper">
+							<input type="text" placeholder="Поиск...">
+						</div>
+						<div class="header__contacts_mobile">
+							<div class="header__contact">
+								<picture>
+									<source srcset="/assets/img/icons/headerPlaceholder.svg" type="image/svg+xml">
+									<img src="/assets/img/icons/headerPlaceholder.png" alt="иконка местоположения">
+								</picture>
+								<div>
+									<p>Адрес call-центр:</p>
+									<p><span>Екатеринбург</span>, Волгоградская улица, 189</p>
+								</div>
+							</div>
+							<div class="header__contact">
+								<picture>
+									<source srcset="/assets/img/icons/headerCall.svg" type="image/svg+xml">
+									<img src="/assets/img/icons/headerCall.png" alt="иконка местоположения">
+								</picture>
+								<div>
+									<p>Номер горячей линии:</p>
+									<a href="+70000000000" class="header__telephone">+7 (000) 000-00-00</a>
+								</div>
+							</div>
+						</div>
 					</nav>
+					<div class="header__buttons_mobile">
+						<button class="primary-button small-button">
+							Вызвать врача
+						</button>
+						<button class="secondary-button small-button">
+							Бесплатная консультация
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -658,7 +695,7 @@
 				</p>
 				<form action="#" class="feedback__form">
 					<div>
-						<input type="text" placeholder="Ваш телефон">
+						<input type="tel" placeholder="Ваш телефон">
 					</div>
 					<button type="submit" class="primary-button medium-button">
 						Отправить заявку
@@ -924,8 +961,8 @@
 					</div>
 					<div class="help__item">
 						<picture class="help__icon">
-							<source srcset="/assets/img/icons/greenCarIcon.svg" type="image/svg+xml">
-							<img src="/assets/img/icons/greenCarIcon.png" alt="иконка машины">
+							<source srcset="/assets/img/icons/greenMedkit.svg" type="image/svg+xml">
+							<img src="/assets/img/icons/greenMedkit.png" alt="иконка аптечки">
 						</picture>
 						<p class="help__des">
 							Быстрый приезд
@@ -933,8 +970,8 @@
 					</div>
 					<div class="help__item">
 						<picture class="help__icon">
-							<source srcset="/assets/img/icons/greenCarIcon.svg" type="image/svg+xml">
-							<img src="/assets/img/icons/greenCarIcon.png" alt="иконка машины">
+							<source srcset="/assets/img/icons/greenHeart.svg" type="image/svg+xml">
+							<img src="/assets/img/icons/greenHeart.png" alt="иконка сердечка">
 						</picture>
 						<p class="help__des">
 							Быстрый приезд
@@ -1096,8 +1133,8 @@
 					</div>
 					<div class="help__item">
 						<picture class="help__icon">
-							<source srcset="/assets/img/icons/greenCarIcon.svg" type="image/svg+xml">
-							<img src="/assets/img/icons/greenCarIcon.png" alt="иконка машины">
+							<source srcset="/assets/img/icons/greenMedkit.svg" type="image/svg+xml">
+							<img src="/assets/img/icons/greenMedkit.png" alt="иконка аптечки">
 						</picture>
 						<p class="help__des">
 							Быстрый приезд
@@ -1105,8 +1142,8 @@
 					</div>
 					<div class="help__item">
 						<picture class="help__icon">
-							<source srcset="/assets/img/icons/greenCarIcon.svg" type="image/svg+xml">
-							<img src="/assets/img/icons/greenCarIcon.png" alt="иконка машины">
+							<source srcset="/assets/img/icons/greenHeart.svg" type="image/svg+xml">
+							<img src="/assets/img/icons/greenHeart.png" alt="иконка сердечка">
 						</picture>
 						<p class="help__des">
 							Быстрый приезд
@@ -1383,20 +1420,6 @@
 						</picture>
 					</button>
 				</div>
-			</div>
-			<div class="swiper__nav-buttons">
-				<button class="prev-btn">
-					<picture>
-						<source srcset="/assets/img/icons/navBtn.svg" type="image/svg+xml">
-						<img src="/assets/img/icons/navBtn.png" alt="кнопка назад">
-					</picture>
-				</button>
-				<button class="next-btn">
-					<picture>
-						<source srcset="/assets/img/icons/navBtn.svg" type="image/svg+xml">
-						<img src="/assets/img/icons/navBtn.png" alt="кнопка назад">
-					</picture>
-				</button>
 			</div>
 			<div class="review__swiper-pagination"></div>
 		</div>
