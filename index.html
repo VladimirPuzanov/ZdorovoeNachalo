@@ -44,7 +44,8 @@
 					<button class="primary-button medium-button popup-btn" data-path="popup-change">
 						Вызвать врача
 					</button>
-					<button class="secondary-button medium-button">
+					<button class="secondary-button medium-button popup-btn change__item-btn change__item-btn_current"
+						data-path="popup-change">
 						Бесплатная консультация
 					</button>
 				</div>
@@ -60,15 +61,70 @@
 							<p class="logo__upper-text">ЗДОРОВОЕ<br> НАЧАЛО</p>
 							<p class="logo__lower-text">наркологическая клиника</p>
 						</div>
+						<button class="header__burger-button">
+							<svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="80"
+								onclick="this.classList.toggle('active')">
+								<path class="line top"
+									d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+								<path class="line middle" d="m 70,50 h -40" />
+								<path class="line bottom"
+									d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+							</svg>
+						</button>
 					</div>
 					<p>Круглосуточно 24/7<br>Анонимно</p>
 					<nav class="header__navigation">
-						<ul>
-							<li><a href="#">Алкоголизм</a></li>
-							<li><a href="#">Наркология</a></li>
-							<li><a href="#">Психиатрия</a></li>
-							<li><a href="#">Реабилитация</a></li>
-							<li><a href="#">О клинике</a></li>
+						<ul class="menu">
+							<li><a href="#">Алкоголизм</a>
+								<ul class="submenu">
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Наркология</a>
+								<ul class="submenu">
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Психиатрия</a>
+								<ul class="submenu">
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Реабилитация</a>
+								<ul class="submenu">
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+								</ul>
+							</li>
+							<li><a href="#">О клинике</a>
+								<ul class="submenu">
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+									<li><a href="#">Анонимное кодирование от алкоглизма</a></li>
+								</ul>
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -116,10 +172,11 @@
 					</div>
 				</div>
 				<div class="intro__buttons">
-					<button class="primary-button medium-button">
+					<button class="primary-button medium-button popup-btn change__item-btn change__item-btn_current"
+						data-path="popup-change">
 						Бесплатная консультация
 					</button>
-					<button class="secondary-button medium-button">
+					<button class="secondary-button medium-button popup-btn" data-path="popup-change">
 						Вызвать врача
 					</button>
 				</div>
@@ -156,7 +213,7 @@
 				Направление деятельности
 			</p>
 			<div class="activite-lines__cards">
-				<div class="activite-lines__card activite">
+				<a href="#" class="activite-lines__card activite">
 					<picture class="activite__icon">
 						<source srcset="assets/img/icons/preparatsIcon.svg" type="image/svg+xml">
 						<img src="assets/img/icons/preparatsIcon.png" alt="иконка лекарств">
@@ -168,8 +225,8 @@
 						Учитывая ключевые сценарии поведения, выбранный нами инновационный путь предоставляет широкие возможности
 						для глубокомысленных рассуждений.
 					</p>
-				</div>
-				<div class="activite-lines__card activite">
+				</a>
+				<a href="#" class="activite-lines__card activite">
 					<picture class="activite__icon">
 						<source srcset="/assets/img/icons/medkitIcon.svg" type="image/svg+xml">
 						<img src="/assets/img/icons/medkitIcon.png" alt="иконка лекарств">
@@ -181,8 +238,8 @@
 						Учитывая ключевые сценарии поведения, выбранный нами инновационный путь предоставляет широкие возможности
 						для глубокомысленных рассуждений.
 					</p>
-				</div>
-				<div class="activite-lines__card activite">
+				</a>
+				<a href="#" class="activite-lines__card activite">
 					<picture class="activite__icon">
 						<source srcset="/assets/img/icons/capIcon.svg" type="image/svg+xml">
 						<img src="/assets/img/icons/capIcon.png" alt="иконка лекарств">
@@ -194,8 +251,8 @@
 						Учитывая ключевые сценарии поведения, выбранный нами инновационный путь предоставляет широкие возможности
 						для глубокомысленных рассуждений.
 					</p>
-				</div>
-				<div class="activite-lines__card activite">
+				</a>
+				<a href="#" class="activite-lines__card activite">
 					<picture class="activite__icon">
 						<source srcset="/assets/img/icons/doctorIcon.svg" type="image/svg+xml">
 						<img src="/assets/img/icons/doctorIcon.png" alt="иконка лекарств">
@@ -207,8 +264,8 @@
 						Учитывая ключевые сценарии поведения, выбранный нами инновационный путь предоставляет широкие возможности
 						для глубокомысленных рассуждений.
 					</p>
-				</div>
-				<div class="activite-lines__card activite">
+				</a>
+				<a href="#" class="activite-lines__card activite">
 					<picture class="activite__icon">
 						<source srcset="/assets/img/icons/inectorIcon.svg" type="image/svg+xml">
 						<img src="/assets/img/icons/inectorIcon.png" alt="иконка лекарств">
@@ -220,8 +277,8 @@
 						Учитывая ключевые сценарии поведения, выбранный нами инновационный путь предоставляет широкие возможности
 						для глубокомысленных рассуждений.
 					</p>
-				</div>
-				<div class="activite-lines__card activite">
+				</a>
+				<a href="#" class="activite-lines__card activite">
 					<picture class="activite__icon">
 						<source srcset="/assets/img/icons/medicHeartIcon.svg" type="image/svg+xml">
 						<img src="/assets/img/icons/medicHeartIcon.png" alt="иконка лекарств">
@@ -233,8 +290,8 @@
 						Учитывая ключевые сценарии поведения, выбранный нами инновационный путь предоставляет широкие возможности
 						для глубокомысленных рассуждений.
 					</p>
-				</div>
-				<div class="activite-lines__card activite">
+				</a>
+				<a href="#" class="activite-lines__card activite">
 					<picture class="activite__icon">
 						<source srcset="/assets/img/icons/capHeart.svg" type="image/svg+xml">
 						<img src="/assets/img/icons/capHeart.png" alt="иконка лекарств">
@@ -246,8 +303,8 @@
 						Учитывая ключевые сценарии поведения, выбранный нами инновационный путь предоставляет широкие возможности
 						для глубокомысленных рассуждений.
 					</p>
-				</div>
-				<div class="activite-lines__card activite">
+				</a>
+				<a href="#" class="activite-lines__card activite">
 					<picture class="activite__icon">
 						<source srcset="/assets/img/icons/breinHeard.svg" type="image/svg+xml">
 						<img src="/assets/img/icons/breinHeard.png" alt="иконка лекарств">
@@ -259,7 +316,7 @@
 						Учитывая ключевые сценарии поведения, выбранный нами инновационный путь предоставляет широкие возможности
 						для глубокомысленных рассуждений.
 					</p>
-				</div>
+				</a>
 			</div>
 		</div>
 	</section>
@@ -357,8 +414,8 @@
 			<div class="swiper__nav-wrapper">
 				<div class="pricelist__swiper swiper">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide pricelist-card">
-							<div class="pricelist-card__title">
+						<div class="swiper-slide pricelist-card change__item-title">
+							<div class="pricelist-card__title current-title">
 								Лечение алкоголизма
 							</div>
 							<div class="pricelist-card__block">
@@ -389,10 +446,11 @@
 								<p>Срок лечения: 1-2 часа</p>
 								<p>Цена: 2500-5000 ₽</p>
 							</div>
-							<button href="#" class="primary-button medium-button pricelist__button">Вызвать врача</button>
+							<button class="primary-button medium-button pricelist__button popup-btn change__item-btn"
+								data-path="popup-change">Вызвать врача</button>
 						</div>
-						<div class="swiper-slide pricelist-card">
-							<div class="pricelist-card__title">
+						<div class="swiper-slide pricelist-card change__item-title">
+							<div class="pricelist-card__title current-title">
 								Лечение алкоголизма
 							</div>
 							<div class="pricelist-card__block">
@@ -423,10 +481,11 @@
 								<p>Срок лечения: 1-2 часа</p>
 								<p>Цена: 2500-5000 ₽</p>
 							</div>
-							<button href="#" class="primary-button medium-button pricelist__button">Вызвать врача</button>
+							<button class="primary-button medium-button pricelist__button popup-btn change__item-btn"
+								data-path="popup-change">Вызвать врача</button>
 						</div>
-						<div class="swiper-slide pricelist-card">
-							<div class="pricelist-card__title">
+						<div class="swiper-slide pricelist-card change__item-title">
+							<div class="pricelist-card__title current-title">
 								Лечение алкоголизма
 							</div>
 							<div class="pricelist-card__block">
@@ -457,10 +516,11 @@
 								<p>Срок лечения: 1-2 часа</p>
 								<p>Цена: 2500-5000 ₽</p>
 							</div>
-							<button href="#" class="primary-button medium-button pricelist__button">Вызвать врача</button>
+							<button class="primary-button medium-button pricelist__button popup-btn change__item-btn"
+								data-path="popup-change">Вызвать врача</button>
 						</div>
-						<div class="swiper-slide pricelist-card">
-							<div class="pricelist-card__title">
+						<div class="swiper-slide pricelist-card change__item-title">
+							<div class="pricelist-card__title current-title">
 								Лечение алкоголизма
 							</div>
 							<div class="pricelist-card__block">
@@ -491,7 +551,8 @@
 								<p>Срок лечения: 1-2 часа</p>
 								<p>Цена: 2500-5000 ₽</p>
 							</div>
-							<button href="#" class="primary-button medium-button pricelist__button">Вызвать врача</button>
+							<button class="primary-button medium-button pricelist__button popup-btn change__item-btn"
+								data-path="popup-change">Вызвать врача</button>
 						</div>
 					</div>
 				</div>
@@ -519,53 +580,60 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td>Инъекция препарата Вивитрол</td>
+					<tr class="change__item-title">
+						<td class="current-title">Инъекция препарата Вивитрол</td>
 						<td>
 							<p>9500 ₽</p>
-							<button class="secondary-button medium-button">Заказать</button>
+							<button class="secondary-button medium-button popup-btn change__item-btn"
+								data-path="popup-change">Заказать</button>
 						</td>
 					</tr>
-					<tr>
-						<td>Вшивание ампулы</td>
+					<tr class="change__item-title">
+						<td class="current-title">Вшивание ампулы</td>
 						<td>
 							<p>6000 ₽</p>
-							<button class="secondary-button medium-button">Заказать</button>
+							<button class="secondary-button medium-button popup-btn change__item-btn"
+								data-path="popup-change">Заказать</button>
 						</td>
 					</tr>
-					<tr>
-						<td>Капельница от запоя</td>
+					<tr class="change__item-title">
+						<td class="current-title">Капельница от запоя</td>
 						<td>
 							<p>1750 ₽</p>
-							<button class="secondary-button medium-button">Заказать</button>
+							<button class="secondary-button medium-button popup-btn change__item-btn"
+								data-path="popup-change">Заказать</button>
 						</td>
 					</tr>
-					<tr>
-						<td>Капельница от похмелья</td>
+					<tr class="change__item-title">
+						<td class="current-title">Капельница от похмелья</td>
 						<td>
 							<p>1750 ₽</p>
-							<button class="secondary-button medium-button">Заказать</button>
+							<button class="secondary-button medium-button popup-btn change__item-btn"
+								data-path="popup-change">Заказать</button>
 						</td>
 					</tr>
-					<tr>
-						<td>Реабилитационный центр</td>
+					<tr class="change__item-title">
+						<td class="current-title">Реабилитационный центр</td>
 						<td>
 							<p>2000 ₽/сутки</p>
-							<button class="secondary-button medium-button">Заказать</button>
+							<button class="secondary-button medium-button popup-btn change__item-btn"
+								data-path="popup-change">Заказать</button>
 						</td>
 					</tr>
-					<tr>
-						<td>Лечение алкоголизма</td>
+					<tr class="change__item-title">
+						<td class="current-title">Лечение алкоголизма</td>
 						<td>
 							<p>от 3500 ₽</p>
-							<button class="secondary-button medium-button">Заказать</button>
+							<button class="secondary-button medium-button popup-btn change__item-btn"
+								data-path="popup-change">Заказать</button>
 						</td>
 					</tr>
-					<tr>
-						<td>Детоксикация</td>
+					<tr class="change__item-title">
+						<td class="current-title">Детоксикация</td>
 						<td>
 							<p>5500 ₽</p>
-							<button class="secondary-button medium-button">Заказать</button>
+							<button class="secondary-button medium-button popup-btn change__item-btn"
+								data-path="popup-change">Заказать</button>
 						</td>
 					</tr>
 				</tbody>
@@ -1160,7 +1228,7 @@
 					</p>
 				</div>
 			</div>
-			<button class="advantages__button primary-button medium-button">
+			<button class="popup-btn primary-button medium-button" data-path="popup-change">
 				Оставить заявку
 			</button>
 		</div>
@@ -1561,4 +1629,5 @@
 		</div>
 	</div>
 </body>
+
 </html>
