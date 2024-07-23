@@ -209,6 +209,7 @@ img{
 	color: #74B629;
 	position: relative;
 	overflow: hidden;
+	z-index: 1;
 }
 
 .secondary-button:after{
@@ -261,7 +262,10 @@ img{
 .attention{
 	background-color: #09536C;
 	padding: 18px 0;
+	display: flex;
 	transition: 0.3s;
+	justify-content: center;
+	align-items: center;
 }
 
 .attention p{
@@ -278,6 +282,12 @@ img{
 	border-radius: 3px;
 	border: 1px solid #FFFFFF;
 	margin-left: 10px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20.8px;
+	text-align: center;
+	color: #FFF;
 }
 
 .logo{
@@ -823,6 +833,10 @@ img{
 	border-radius: 10px;
 }
 
+.activite__button{
+	display: none;
+}
+
 .activite:hover{
 	background-color: #74B629;
 	color: #FFFFFF;
@@ -847,6 +861,7 @@ img{
 	height: 5px;
 	border-radius: 2px;
 	background: linear-gradient(0deg, #8BCA3B 0%, #61A41A 100%);
+	margin-top: auto;
 }
 
 .activite__icon{
@@ -1090,6 +1105,10 @@ img{
 
 .pricelist__table{
 	width: 100%;
+}
+
+thead.mobile{
+	display: none;
 }
 
 .pricelist__table thead tr{
@@ -1679,6 +1698,10 @@ img{
 	max-width: 248px;
 }
 
+.review__link_mobile{
+	display: none;
+}
+
 .review__swiper{
 	margin-bottom: 30px;
 }
@@ -1959,6 +1982,8 @@ img{
 	display: block;
 	width: 14px;
 	height: 14px;
+	background-size: contain;
+	background-repeat: no-repeat;
 	position: absolute;
 	right: 5px;
 	top:0;
@@ -2023,7 +2048,7 @@ img{
 .footer__text{
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
-	font-style: 14px;
+	font-size: 14px;
 	line-height: 19.6px;
 	color:#323B4480;
 	display: block;
@@ -2045,7 +2070,7 @@ img{
 .footer__row a{
 	font-family: "Open Sans", sans-serif;
 	font-weight: 700;
-	font-style: 14px;
+	font-size: 14px;
 	line-height: 18.2px;
 	color: #8BCA3B;
 	display: flex;
@@ -2276,6 +2301,10 @@ img{
 }
 
 @media(max-width: 1150px){
+	.swiper__nav-buttons{
+		display: none;
+	}
+
 	.header__logo-row-wrapper_active{
 		padding: 0 10px;
 	}
@@ -2494,11 +2523,53 @@ img{
 	.pdb80{
 		padding: 50px 0;
 	}
+	/* intro */
+	.intro-title, .about-clinic__title, .activite-lines__title, .steps__title, .pricelist__title,.help__title, .advantages__title, .faq__title, .faq__card-title, .review__title, .why__title, .popup__title{
+		font-size: 28px;
+		line-height: 33.6px;
+		margin-bottom: 12px;
+	}
+
+	.intro__subtitle, .pricelist__attention{
+		font-size: 14px;
+		line-height: 18.2px;
+	}
+
+	.intro__pluses{
+		flex-wrap: wrap;
+		padding: 15px 20px;
+	}
+
+	.intro__plus{
+		flex-basis: 100%;
+		display: flex;
+		align-items: center;
+		gap: 12px;
+	}
+
+	.intro__plus picture{
+		width: 30px;
+		height: 30px;
+	}
+
+	.intro__plus p{
+		font-size: 14px;
+		line-height: 19.6px;
+	}
+
+	.intro__buttons{
+		flex-wrap: wrap;
+	}
+
+	.intro__buttons button{
+		flex-basis: 100%;
+	}
 
 	.intro__pic{
 		display: none;
 	}
 
+	/* about-clinic */
 	.about-clinic__content{
 		flex-wrap: wrap;
 		gap: 20px;
@@ -2516,6 +2587,11 @@ img{
 		margin: 0 auto;
 	}
 
+	.about-clinic__text{
+		font-size: 14px;
+		line-height: 18.2px;
+	}
+
 	.article__card{
 		flex-wrap: wrap;
 		gap: 20px;
@@ -2525,28 +2601,82 @@ img{
 		flex-basis: 100%;
 	}
 
+	/* activite-lines */
+
 	.activite-lines__cards{
 		gap: 10px;
 	}
 
 	.activite-lines__card{
 		flex-basis: calc(50% - 5px);
+		align-items: center;
+		text-align: center;
+		background-color: #FFF;
+		border-radius: 2px;
+		padding: 20px, 15px, 0px, 15px
+	}
+
+	.activite__title{
+		font-size: 14px;
+		line-height: 16.8px;
+	}
+
+	.activite__des{
+		display: none;
 	}
 
 	.steps__cards{
 		gap: 10px;
 	}
 
+	/* steps */
 	.steps__card{
 		flex-basis: calc(50% - 5px);
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
 	}
 
+	.step__number{
+		top: auto;
+		bottom: -25px;
+	}
+
+	.step__text{
+		font-size: 14px;
+		line-height: 16.8px;
+	}
+
+	/* pricelist */
+	thead.desctop{
+		display: none;
+	}
+
+	thead.mobile{
+		display: table-header-group
+	}
+
+	.pricelist__table tbody tr{
+		align-items: flex-start;
+	}
+
+	.pricelist__table tbody td:last-child{
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+		gap: 10px;
+	}
+
+	/* feedback */
 	.help__photo, .feedback__pic{
 		display: none;
 	}
 
 	.feedback__form, .help__form{
 		flex-wrap: wrap;
+	}
+
+	.feedback__col{
+		padding: 20px;
 	}
 
 	.help__form>*, .feedback__form>*{
@@ -2561,6 +2691,11 @@ img{
 		padding: 20px;
 	}
 
+	/* help */
+	.help__title{
+		text-align: center;
+	}
+
 	.help__card{
 		flex-wrap: wrap;
 		gap: 10px;
@@ -2570,6 +2705,12 @@ img{
 		flex-basis: 100%;
 	}
 
+	.help__des{
+		font-size: 14px;
+		line-height: 18.2px;
+	}
+
+	/* advantages */
 	.advantages__cards{
 		gap: 15px;
 	}
@@ -2582,6 +2723,17 @@ img{
 		width: 100%;
 	}
 
+	.advantages__name{
+		font-size: 16px;
+		line-height: 19.2px;
+	}
+
+	.advantages__des{
+		font-size: 14px;
+		line-height: 19.6px;
+	}
+
+	/* faq */
 	.faq__form{
 		flex-wrap: wrap;
 	}
@@ -2589,5 +2741,219 @@ img{
 	.faq__form>button, .faq__form>div{
 		flex-basis: 100%;
 		max-width: 100%;
+	}
+
+	.faq__question{
+		font-size: 16px;
+		line-height: 20.8px;
+		padding: 20px;
+	}
+
+	.faq__answer p{
+		padding: 20px;
+		font-size: 14px;
+		line-height: 20.6px;
+	}
+
+	/* article and textblock */
+	.article__card{
+		padding: 20px;
+	}
+
+	.article__doctor{
+		flex-direction: column;
+		gap: 15px;
+		align-items: center;
+	}
+
+	.article__table-wrapper{
+		width: 100%;
+		overflow-x: scroll;
+	}
+
+	.article__table td{
+		min-width: 260px;
+	}
+
+	.text-block h2, .text-block .h2{
+		font-size: 26px;
+		line-height: 31.2px;
+		margin-bottom: 15px;
+		margin-top: 40px;
+	}
+
+	.text-block p, .text-block ul li, .text-block ol li{
+		font-size: 14px;
+		line-height: 19.6px;
+	}
+
+	.text-block h3, .text-block .h3{
+		font-size: 24px;
+		line-height: 28.8px;
+	}
+
+	.text-block h4, .text-block .h4{
+		font-size: 22px;
+		line-height: 26.4px;
+		margin-top: 25px;
+		margin-bottom: 15px;
+	}
+
+	.text-block h5, .text-block h5{
+		font-size: 18px;
+		line-height: 21.6px;
+		margin-top: 20px;
+		margin-bottom: 15px;
+	}
+
+	/* quote */
+	.quote__author{
+		flex-direction: column;
+		gap: 10px;
+		align-items: center;
+	}
+
+	/* review */
+	.review__title::after{
+		height: 0;
+	}
+	.review__link{
+		display: none;
+	}
+
+	.review__link_mobile{
+		display: block;
+		margin-top: 20px;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.quote__content{
+		padding: 30px 20px;
+	}
+
+	.quote__content::before, .quote__content::after{
+		width: 37px;
+		height: 30px;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	.quote__text{
+		font-size: 14px;
+		line-height: 18.2px;
+	}
+
+	.quote__content::after{
+		top: -5px;
+		left: 5px;
+	}
+
+	.quote__content::before{
+		right: 5px;
+		top: calc(50% - 5px);
+	}
+
+	.quote__logo{
+		display: none;
+	}
+
+	/* why */
+	.why__cards{
+		gap: 10px;
+	}
+
+	.why__card{
+		padding: 15px;
+	}
+
+	.why__number{
+		font-size: 50px;
+		line-height: 60px;
+	}
+
+	.why__name{
+		font-size: 16px;
+		line-height: 19.2px;
+	}
+
+	.why__text{
+		font-size: 14px;
+		line-height: 18.2px;
+	}
+
+	.attention{
+		padding: 15px 10px;
+		display: flex;
+		gap: 10px;
+	}
+
+	/* footer */
+	.footer__content{
+		flex-wrap: wrap;
+		gap: 25px;
+		padding: 40px 10px 25px 10px;
+	}
+
+	.footer__col{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.footer__logo{
+		gap: 16px;
+		flex-basis: 100%;
+	}
+
+	.footer__logo .logo__pic{
+		width: 84.68px;
+		height: 84.68px;
+	}
+
+	.footer__logo .logo__upper-text{
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	.footer__logo .logo__upper-text{
+		font-size: 16px;
+		line-height: 21px;
+	}
+
+	.footer__form{
+		flex-basis: 100%;
+	}
+
+	.footer__pay picture{
+		margin: 0;
+	}
+
+	.footer__vk-link{
+		width: 40px;
+		height: 40px;
+	}
+
+	.footer__links p{
+		margin-bottom: 15px;
+	}
+
+	.footer__links li{
+		margin-bottom: 10px;
+	}
+
+	.footer__text{
+		font-size: 12px;
+		line-height: 16.8px;
+	}
+
+	.footer__row a{
+		font-size: 12px;
+		line-height: 15.6px;
+	}
+
+	.footer__row span{
+		text-align: center;
 	}
 }

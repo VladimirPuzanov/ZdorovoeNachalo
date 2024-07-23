@@ -330,4 +330,20 @@ popupOpenBtns.forEach(function (el) {
 		}
 	});
 });
+
+const textBlocks = document.querySelectorAll(".text-block");
+    if (textBlocks.length > 0) {
+        textBlocks.forEach(textBlock => {
+            tables = textBlock.querySelectorAll("table");
+            if (tables) {
+                tables.forEach(table => {
+                    table.classList.add("article__table");
+                    let tableWrapper = document.createElement('div');
+                    tableWrapper.classList.add("article__table-wrapper");
+                    table.parentNode.insertBefore(tableWrapper, table);
+                    tableWrapper.appendChild(table);
+                });
+            }
+        });
+     }
 /* end popups */
