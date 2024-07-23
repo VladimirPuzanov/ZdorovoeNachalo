@@ -131,6 +131,64 @@ if (reviewSlider.length > 0) {
 	})
 }
 
+const doctorsSliderCheck = document.querySelectorAll('.doctors');
+if (doctorsSliderCheck.length > 0) {
+	doctorsSliderCheck.forEach((slider) => {
+		const doctorsSliderCheck = new Swiper(slider.querySelector('.doctors__swiper'), {
+			direction: 'horizontal',
+			slidesPerView: 1.1,
+			grabCursor: true,
+			spaceBetween: 10,
+			navigation: {
+				nextEl: slider.querySelector('.next-btn'),
+				prevEl: slider.querySelector('.prev-btn')
+			},
+			breakpoints: {
+				360: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				},
+				950: {
+					slidesPerView: 3,
+					spaceBetween: 20,
+				}
+			},
+			pagination: {
+				el: ".doctor__swiper-pagination",
+			},
+		});
+	})
+}
+
+const licenseSliderCheck = document.querySelectorAll('.license');
+if (licenseSliderCheck.length > 0) {
+	licenseSliderCheck.forEach((slider) => {
+		const licenseSliderCheck = new Swiper(slider.querySelector('.license__swiper'), {
+			direction: 'horizontal',
+			slidesPerView: 1.1,
+			grabCursor: true,
+			spaceBetween: 10,
+			navigation: {
+				nextEl: slider.querySelector('nextButton'),
+				prevEl: slider.querySelector('prevButton'),
+			},
+			breakpoints: {
+				360: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				},
+				950: {
+					slidesPerView: 4,
+					spaceBetween: 20,
+				}
+			},
+			pagination: {
+				el: ".license__swiper-pagination",
+			},
+		});
+	})
+}
+
 faq = document.querySelectorAll(".faq__question");
 if (faq.length > 0) {
 	faq.forEach(question => {
@@ -347,3 +405,5 @@ const textBlocks = document.querySelectorAll(".text-block");
         });
      }
 /* end popups */
+
+Fancybox.bind("[data-fancybox]", {});

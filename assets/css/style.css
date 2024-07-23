@@ -192,6 +192,7 @@ img{
 	left: 0;
 	z-index: -1;
 	transition: 0.3s;
+	border-radius: 10px;
 }
 
 .primary-button:hover{
@@ -214,6 +215,7 @@ img{
 
 .secondary-button:after{
 	content: "";
+	border-radius: 10px;
 	display: block;
 	height: 100%;
 	width: 100%;
@@ -599,6 +601,10 @@ img{
 	transition: 0.3s;
 }
 
+.text-block b{
+	font-weight: 700;
+}
+
 .text-block a:hover{
 	color: #0000EE;
 }
@@ -654,6 +660,7 @@ img{
 	margin-bottom: 12px;
 	list-style-type: disc;
 	list-style-position: inside;
+	margin-bottom: 12px;
 }
 
 .text-block ul li::marker{
@@ -662,11 +669,13 @@ img{
 
 .text-block ol li{
 	list-style-position: inside;
+	margin-bottom: 12px;
 }
 
 .text-block ol li::marker{
 	color: #74B629;
-	font-size: 12px;
+	font-size: 16px;
+	font-weight: 700;
 }
 
 .text-block th{
@@ -717,6 +726,23 @@ img{
 	margin-bottom: 15px;
 }
 
+.intro__bread-crumbs{
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	line-height: 19.2px;
+	color: #323B4480;
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
+
+.intro__bread-crumbs a{
+	color: #323B4480;
+}
+
+.intro__bread-crumbs a:last-child{
+	color: #323B44;
+}
+
 .intro__subtitle{
 	font-family: Roboto, sans-serif;
 	font-size: 16px;
@@ -757,6 +783,68 @@ img{
 
 .intro__buttons>*{
 	flex: 1;
+}
+
+.intro__row{
+	margin-top: 60px;
+	display: flex;
+	gap: 20px;
+}
+
+.intro__form{
+	background-color: #74B6291A;
+	border-radius: 10px;
+	padding: 30px;
+}
+
+.intro__form>p{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 38.4px;
+	color:#323B44;
+	margin-bottom: 20px;
+}
+
+.intro__form input{
+	background-color: transparent;
+	padding: 14px 5px;
+	font-family: "Open Sans";
+	font-size: 16px;
+	line-height: 20.8px;
+	color: #1B4655CC;
+	border-bottom: 2px solid #496B7333;
+	margin-bottom: 20px;
+}
+
+.intro__form div{
+	display: flex;
+	gap: 15px;
+}
+
+.intro__form div>*{
+	flex: 1;
+}
+
+.intro__form div p{
+	font-family: "Open Sans", sans-serif;
+	font-size: 12px;
+	line-height: 15.6px;
+	color: #323B44B2;
+}
+
+.intro__form div p a{
+	color: #74B629;
+}
+
+.intro__photo{
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.intro__photo img{
+	object-fit: cover;
+	height: 100%;
 }
 
 /* about clinic */
@@ -876,7 +964,7 @@ img{
 	font-size: 20px;
 	line-height: 24px;
 	color: #323B44;
-	margin-bottom: 12px;;
+	margin-bottom: 12px;
 }
 
 .activite__des{
@@ -1712,7 +1800,7 @@ thead.mobile{
 	border-radius: 10px;
 }
 
-.review__name{
+.review__name, .reviews__name_popup{
 	font-family: "Exo 2", sans-serif;
 	font-weight: 600;
 	font-size: 18px;
@@ -1721,7 +1809,7 @@ thead.mobile{
 	margin-bottom: 12px;
 }
 
-.review__name::after{
+.review__name::after, .reviews__name_popup::after{
 	content: "";
 	display: block;
 	width: 100%;
@@ -1732,6 +1820,11 @@ thead.mobile{
 }
 
 .review__text{
+	max-height: 115px;
+	overflow: hidden;
+}
+
+.review__text, .reviews__text_popup{
 	font-family: "Open Sans", sans-serif;
 	font-size: 16px;
 	line-height: 22.4px;
@@ -2102,6 +2195,149 @@ thead.mobile{
 	height: 8px;
 	background-image: url("/assets/img/icons/arrow.svg");
 	margin-left: 10px;
+}
+
+/* doctors */
+.doctors__title{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	color: #323B44;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.doctors__title::after{
+	content: "";
+	display: block;
+	width: 64px;
+	height: 6px;
+	border-radius: 7px;
+	margin: 0 auto;
+	margin-top: 15px;
+	background: linear-gradient(0deg, #8BCA3B 0%, #61A41A 100%);
+}
+
+.doctors__card{
+	padding: 30px;
+	background-color: #FFF;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0px 0px 20px 0px #00000014;
+}
+
+.doctors__photo{
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.doctors__name{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 26px;
+	margin-bottom: 15px;
+}
+
+.doctors__name::after{
+	content: "";
+	display: block;
+	width: 64px;
+	height: 5px;
+	background: 
+	linear-gradient(0deg, #8BCA3B 0%, #61A41A 100%);
+	border-radius: 7px;
+	margin-top: 12px;
+}
+
+.doctors__spec{
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	line-height: 22.4px;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.doctors__spec::before{
+	content: "";
+	display: block;
+	width: 25px;
+	height: 25px;
+	background-image: url("/assets/img/icons/portfel.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.doctor__exp{
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	line-height: 22.4px;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	gap: 3px;
+	margin-bottom: 20px;
+}
+
+.doctor__exp::before{
+	content: "";
+	display: block;
+	width: 25px;
+	height: 25px;
+	background-image: url("/assets/img/icons/exp.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 7px;
+}
+
+.doctors__link{
+	display: block;
+	text-align: center;
+}
+
+.doctors__swiper{
+	margin-bottom: 25px;
+}
+
+.doctor__swiper-pagination{
+	text-align: center;
+}
+
+/* license */
+.license__title{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	color: #323B44;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.license__title::after{
+	content: "";
+	display: block;
+	width: 64px;
+	height: 6px;
+	border-radius: 7px;
+	margin: 0 auto;
+	margin-top: 15px;
+	background: linear-gradient(0deg, #8BCA3B 0%, #61A41A 100%);
+}
+
+.license__swiper-pagination{
+	margin-top: 15px;
+	text-align: center;
+}
+
+/* about-page */
+.about-page__content{
+	padding: 60px 0;
 }
 
 /* popups */
@@ -2524,7 +2760,7 @@ thead.mobile{
 		padding: 50px 0;
 	}
 	/* intro */
-	.intro-title, .about-clinic__title, .activite-lines__title, .steps__title, .pricelist__title,.help__title, .advantages__title, .faq__title, .faq__card-title, .review__title, .why__title, .popup__title{
+	.intro-title, .about-clinic__title, .activite-lines__title, .steps__title, .pricelist__title,.help__title, .advantages__title, .faq__title, .faq__card-title, .review__title, .why__title, .license__title, .popup__title{
 		font-size: 28px;
 		line-height: 33.6px;
 		margin-bottom: 12px;
