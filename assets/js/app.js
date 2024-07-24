@@ -189,6 +189,35 @@ if (licenseSliderCheck.length > 0) {
 	})
 }
 
+const photoSwiperCheck = document.querySelectorAll('.photo');
+if (photoSwiperCheck.length > 0) {
+	photoSwiperCheck.forEach((slider) => {
+		const photoSwiper = new Swiper(slider.querySelector('.photo__swiper'), {
+			direction: 'horizontal',
+			slidesPerView: 1.1,
+			grabCursor: true,
+			spaceBetween: 10,
+			navigation: {
+				nextEl: slider.querySelector('.next-btn'),
+				prevEl: slider.querySelector('.prev-btn')
+			},
+			breakpoints: {
+				360: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				},
+				950: {
+					slidesPerView: 3,
+					spaceBetween: 20,
+				}
+			},
+			pagination: {
+				el: ".photo__swiper-pagination",
+			},
+		});
+	})
+}
+
 faq = document.querySelectorAll(".faq__question");
 if (faq.length > 0) {
 	faq.forEach(question => {
