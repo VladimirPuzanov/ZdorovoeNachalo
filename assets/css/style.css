@@ -2439,6 +2439,11 @@ p.author__spec{
 	text-align: center;
 }
 
+.photo__button{
+	display: none;
+	text-align: center;
+}
+
 /* popups */
 .popup {
 	height: 100vh;
@@ -3316,5 +3321,14 @@ p.author__spec{
 
 	.author__text::after{
 		margin: 10px auto;
+	}
+
+	.photo__link{
+		display: none;
+	}
+
+	.photo__button{
+		display: block;
+		margin-top: 20px;
 	}
 }
