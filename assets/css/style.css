@@ -611,6 +611,25 @@ img{
 	color: #0000EE;
 }
 
+.text-block h1, .text-block h1{
+	font-family: "Exo 2", sans-serif;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 57.6px;
+	margin-bottom: 45px;
+}
+
+.text-block h1::after, .text-block h1::after{
+	content: "";
+	display: block;
+	width: 110px;
+	height: 6px;
+	border-radius: 7px;
+	margin-top: 15px;
+	background: linear-gradient(0deg, #8BCA3B 0%, #61A41A 100%);
+
+}
+
 .text-block h2, .text-block .h2{
 	font-family: "Exo 2", sans-serif;
 	font-weight: 700;
@@ -652,6 +671,10 @@ img{
 
 .text-block p{
 	margin-bottom: 20px;
+}
+
+.text-block p:last-child{
+	margin-bottom: 0;
 }
 
 .text-block table{
@@ -735,6 +758,14 @@ img{
 	color: #323B4480;
 	margin-bottom: 40px;
 	margin-top: 20px;
+}
+
+.intro__bread-crumbs_contacts{
+	position: absolute;
+	top: -50px;
+	left: 0;
+	z-index: 3;
+	margin: 0;
 }
 
 .intro__bread-crumbs:last-child{
@@ -1264,6 +1295,18 @@ thead.mobile{
 	flex: 1;
 }
 
+.pricelist__table_on-page tbody tr{
+	padding: 10px 0;
+}
+
+.pricelist__table_on-page{
+	margin-bottom: 20px;
+}
+
+.pricelist__table_on-page:last-child{
+	margin-bottom: 0;
+}
+
 /* feedback */
 .feedback__content{
 	display: flex;
@@ -1349,6 +1392,14 @@ thead.mobile{
 	background-color: #FFF;
 	border-radius: 10px;
 	margin-bottom: 35px;
+}
+
+.article__card_on-page{
+	gap: 40px
+}
+
+.article__card_on-page>*{
+	flex-basis: calc(50% - 20px);
 }
 
 .article__content-table-title{
@@ -2639,6 +2690,205 @@ p.author__spec{
 	text-align: center;
 }
 
+/* doc-page */
+.doc-page__content{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+}
+.doc-page__pic-col{
+	flex-basis: calc(33% - 20px);
+}
+
+.doc-page__pic{
+	margin-bottom: 30px;
+}
+
+.doc-page__button{
+	text-align: center;
+	width: 100%;
+}
+
+.doc-page__col{
+	flex-basis: calc(66.666% - 20px);
+	max-width: calc(66.666% - 20px);
+}
+
+.doc-page__title{
+	font-family: "Open Sans";
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 56.7px;
+	margin-bottom: 30px;
+}
+
+.doc-page__title::after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 4px;
+	border-radius: 7px;
+	background-color: #74B62933;
+	margin-top: 20px;
+}
+
+.document__swiper-wrapper{
+	width: calc(100% - 140px);
+	margin: 0 auto;
+}
+
+.document__card{
+	padding: 30px 20px;
+	display: flex;
+	gap: 20px;
+	background-color: #F9F9F9;
+	border-bottom: 5px solid #87C738;
+}
+
+.document__card>a{
+	width: 100%;
+	max-width: 150px;
+}
+
+.document__title{
+	font-family: "Open Sans";
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22.4px;
+	color: #323B44;
+}
+
+.document__pagination{
+	text-align: center;
+	margin-top: 20px;
+}
+
+/* pricelist-page */
+.pricelist-page__title{
+	font-family: "Exo 2";
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 57.6px;
+	color: #323B44;
+	margin-bottom: 40px;
+}
+
+.pricelist-page__title::after{
+	content: "";
+	display: block;
+	width: 110px;
+	height: 6px;
+	border-radius: 7px;
+	background: linear-gradient(0deg, #8BCA3B 0%, #61A41A 100%);
+	margin-top: 15px;
+}
+
+.pricelist-page__category{
+	padding-top: 20px;
+	padding-bottom: 10px;
+	font-family: "Exo 2";
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 31.2px;
+	color: #74B629;
+}
+
+.pricelist-page__category::after{
+	content: "";
+	display: block;
+	background-color: #81C13333;
+	height: 6px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+/* public */
+.public__title{
+	font-family: "Exo 2";
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 57.6px;
+	margin-bottom: 30px;
+}
+
+.public__title::after{
+	content:"";
+	display: block;
+	width: 110px;
+	height: 6px;
+	border-radius: 7px;
+	background: linear-gradient(0deg, #8BCA3B 0%, #61A41A 100%);
+	margin-top: 15px;
+}
+
+.public__cards{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.public__card{
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px 0px #00000014;
+	overflow: hidden;
+	flex-basis: calc(33.3333% - 40px / 3);
+	transition: 0.3s;
+}
+
+.public__card:hover{
+	box-shadow: 0px 0px 20px 0px #61A41A;
+	transform: scale(1.05);
+}
+
+.public__thumbnail{
+	height: 200px;
+	overflow: hidden;
+}
+
+.public__thumbnail img{
+	width: 100%;
+	object-fit: cover;
+}
+
+.public__des{
+	margin-top: -30px;
+	background-color: #FFF;
+	padding: 24px;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+}
+
+.public__des p:first-child{
+	font-family: "Open Sans";
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20.8px;
+	margin-bottom: 10px;
+	color: #333333E5;
+}
+
+.public__des p:last-child{
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19.6px;
+	color: #949494;
+	padding-top: 40px;
+	border-top: 2px solid #74B62933;
+}
+
+/* article-page */
+.article-page__thumb{
+	flex-basis: 40%;
+}
+
+.article-page__thumb img{
+	width: 100%;
+	height: auto;
+}
+
 /* popups */
 .popup { 
 	height: 100vh;
@@ -3059,7 +3309,7 @@ p.author__spec{
 		padding: 50px 0;
 	}
 	/* intro */
-	.intro-title, .about-clinic__title, .activite-lines__title, .steps__title, .pricelist__title,.help__title, .advantages__title, .faq__title, .faq__card-title, .review__title, .why__title, .license__title, .popup__title, .reviews-page__title, .photo-page__title, .doctors-page__title{
+	.intro-title, .about-clinic__title, .activite-lines__title, .steps__title, .pricelist__title,.help__title, .advantages__title, .faq__title, .faq__card-title, .review__title, .why__title, .license__title, .popup__title, .reviews-page__title, .photo-page__title, .doctors-page__title, .public__title{
 		font-size: 28px;
 		line-height: 33.6px;
 		margin-bottom: 12px;
@@ -3110,6 +3360,11 @@ p.author__spec{
 
 	.intro__form>div{
 		flex-direction: column;
+	}
+
+	.intro__bread-crumbs_contacts{
+		left: 10px;
+		top: -430px;
 	}
 
 	/* about-clinic */
@@ -3316,6 +3571,10 @@ p.author__spec{
 
 	.article__table td{
 		min-width: 260px;
+	}
+
+	.text-block h1, .text-block h1{
+		
 	}
 
 	.text-block h2, .text-block .h2{
@@ -3541,6 +3800,19 @@ p.author__spec{
 		padding-bottom: 450px;
 	}
 
+	.contacts__map_page{
+		padding-bottom: 0;
+		padding-top: 450px;
+	}
+
+	.contacts__map_page .contacts__content{
+		background-color: transparent;
+	}
+
+	.contacts__map_page .contacts__card{
+		border-radius: 10px;
+	}
+
 	.contacts__card{
 		max-width: 100%;
 		width: 100%;
@@ -3564,6 +3836,46 @@ p.author__spec{
 
 	/* doctors-page */
 	.doctor-page__card{
+		flex-basis: 100%;
+	}
+
+	/* doc-page */
+	.doc-page__content{
+		flex-wrap: wrap;
+	}
+
+	.doc-page__content>*{
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+
+	.doc-page__col{
+		flex-basis: 100%;
+	}
+
+	.document__card{
+		padding: 0;
+		border: none;
+	}
+
+	.document__card>div{
+		display: none;
+	}
+
+	.document__card>a{
+		max-width: 100%;
+	}
+
+	.document__card>a img{
+		width: 100%;
+	}
+
+	.document__swiper-wrapper{
+		width: 100%;
+	}
+
+	/* public */
+	.public__card{
 		flex-basis: 100%;
 	}
 }

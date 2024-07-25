@@ -131,6 +131,35 @@ if (reviewSlider.length > 0) {
 	})
 }
 
+const documentSliderCheck = document.querySelectorAll('.doc-page');
+if (documentSliderCheck.length > 0) {
+	documentSliderCheck.forEach((slider) => {
+		const documentSlider = new Swiper(slider.querySelector('.documents__swiper'), {
+			direction: 'horizontal',
+			slidesPerView: 1.1,
+			grabCursor: true,
+			spaceBetween: 10,
+			navigation: {
+				nextEl: slider.querySelector('.next-btn'),
+				prevEl: slider.querySelector('.prev-btn'),
+			},
+			breakpoints: {
+				360: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				},
+				950: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				}
+			},
+			pagination: {
+				el: ".document__pagination",
+			},
+		});
+	})
+}
+
 const doctorsSliderCheck = document.querySelectorAll('.doctors');
 if (doctorsSliderCheck.length > 0) {
 	doctorsSliderCheck.forEach((slider) => {
