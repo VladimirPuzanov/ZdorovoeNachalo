@@ -261,6 +261,10 @@ img{
 	padding-bottom: 80px;
 }
 
+.pdu40{
+	padding: 40px 0;
+}
+
 .attention{
 	background-color: #09536C;
 	padding: 18px 0;
@@ -2889,6 +2893,88 @@ p.author__spec{
 	height: auto;
 }
 
+.article-page__author{
+	margin-top: 45px;
+}
+
+/* promo */
+.promo__title{
+	font-family: "Exo 2";
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 57.6px;
+	margin-bottom: 30px;
+}
+
+.promo__title::after{
+	content:"";
+	display: block;
+	width: 110px;
+	height: 6px;
+	border-radius: 7px;
+	background: linear-gradient(0deg, #8BCA3B 0%, #61A41A 100%);
+	margin-top: 15px;
+}
+
+.promo__cards{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.promo__card{
+	flex-basis: calc(50% - 10px);
+	display: flex;
+	gap: 20px;
+	background-color: #F9F9F9;
+	border-bottom: 5px solid;
+	border-radius: 10px;
+	border-bottom: 5px solid #87C738;
+	padding: 20px 20px 30px 20px;
+}
+
+.promo__photo{
+	border-radius: 10px;
+	overflow: hidden;
+	min-width: 161px;
+}
+
+.promo__card>div{
+	display: flex;
+	flex-direction: column;
+}
+
+.promo__name{
+	font-family: "Open Sans";
+	font-size: 22px;
+	line-height: 30.8px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	color: #323B44;
+}
+
+.promo__des{
+	font-family: "Open Sans";
+	font-size: 14px;
+	line-height: 18.2px;
+	font-weight: 400;
+	color: #323B44CC;
+	margin-bottom: 10px;
+}
+
+.promo__attention{
+	font-family: "Open Sans";
+	font-size: 14px;
+	line-height: 18.2px;
+	font-weight: 700;
+	color:#323B44CC;
+	margin-bottom: 10px;
+}
+
+.promo__button{
+	margin-top: auto;
+}
+
 /* popups */
 .popup { 
 	height: 100vh;
@@ -3305,6 +3391,10 @@ p.author__spec{
 		padding: 50px 0;
 	}
 
+	.pdu40{
+		padding: 30px 0 40px 0;
+	}
+
 	.pdb80{
 		padding: 50px 0;
 	}
@@ -3574,7 +3664,8 @@ p.author__spec{
 	}
 
 	.text-block h1, .text-block h1{
-		
+		font-size: 28px;
+		line-height: 33.6px;
 	}
 
 	.text-block h2, .text-block .h2{
@@ -3878,4 +3969,21 @@ p.author__spec{
 	.public__card{
 		flex-basis: 100%;
 	}
+
+	/* article-page */
+	.article-page__thumb{
+		flex-basis: 100%;
+	}
+
+	/* promo */
+	.promo__card{
+		flex-basis: 100%;
+		flex-wrap: wrap;
+	}
+
+	.promo__photo{
+		flex-basis: 100%;
+		max-height: 200px;
+	}
+
 }
