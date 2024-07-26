@@ -254,6 +254,7 @@ if (faq.length > 0) {
 			button = this.querySelector(".faq__button");
 			answer = this.nextElementSibling;
 			button.classList.toggle("faq__button_active");
+			this.classList.toggle("faq__question_active");
 			if (answer.style.maxHeight) {
 				answer.removeAttribute("style");
 			}
