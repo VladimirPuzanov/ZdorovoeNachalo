@@ -325,7 +325,7 @@ img{
 .logo__lower-text{
 	font-family: "Open Sans";
 	font-weight: 400;
-	font-style: 8.5px;
+	font-size: 8.5px;
 	line-height: 11px;
 	color: #00000099;
 }
@@ -3737,6 +3737,10 @@ p.author__spec{
 		line-height: 21.6px;
 		margin-top: 20px;
 		margin-bottom: 15px;
+	}
+
+	.text-block ul li{
+
 	}
 
 	/* quote */
