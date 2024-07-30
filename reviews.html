@@ -176,7 +176,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="reviews-page pdv80">
+	<section class="reviews-page pdu40 pdb80">
 		<div class="content">
 			<h1 class="reviews-page__title">
 				Отзывы пациентов
@@ -261,8 +261,32 @@
 					</button>
 				</div>
 			</div>
+			<button class="primary-button medium-button reviews-page__button popup-btn" data-path="popup__reviews">
+				Оставить отзыв
+			</button>
 		</div>
 	</section>
+	<div class="popup" data-target="popup__reviews">
+		<div class="popup__body">
+			<div class="popup__content">
+				<picture class="close-popup">
+					<source srcset="assets/img/icons/closeBtn.svg" type="image/svg+xml">
+					<img src="/assets/img/icons/closeBtn.png" alt="close_popup">
+				</picture>
+				<p class="popup__title ">Оставьте свой отзыв</p>
+				<form class="form popup__form">
+					<input type="text" class="popup__input" placeholder="Ваше имя" required>
+					<input type="tel" class="popup__input" placeholder="Ваш телефон" required>
+
+					<textarea placeholder="Текст отзыва" class="popup__textarea"></textarea>
+					<button class="popup-btn medium-button primary-button popup__btn" type="submit">Отправить</button>
+					<p class="form__politic popup__politic">
+						Отправляя форму, Вы соглашаетесь с <a href="#" rel="nofollow">политикой конфиденциальности</a>
+					</p>
+				</form>
+			</div>
+		</div>
+	</div>
 	<div class="attention">
 		<p>Имеются противопоказания, необходимо проконсультироваться со специалистом</p> <span>18+</span>
 	</div>
@@ -368,6 +392,5 @@
 			</div>
 		</div>
 	</div>
-	<script>Fancybox.bind("[data-fancybox]", {});</script>
 </body>
 </html>

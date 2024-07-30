@@ -740,6 +740,10 @@ img{
 	align-items: center;
 }
 
+.intro__content_service{
+	padding-top: 0;
+}
+
 .intro__pic{
 	min-width: 359px;
 }
@@ -767,7 +771,7 @@ img{
 	font-size: 16px;
 	line-height: 19.2px;
 	color: #323B4480;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	margin-top: 20px;
 }
 
@@ -2195,6 +2199,13 @@ thead.mobile{
 	flex-basis: calc(50% - 10px);
 }
 
+.reviews-page__button{
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
 .photo-page__title{
 	font-family: "Exo 2";
 	font-weight: 700;
@@ -3440,13 +3451,14 @@ p.author__spec{
 		padding: 50px 0;
 	}
 
+	.pdb80{
+		padding: 50px 0;
+	}
+
 	.pdu40{
 		padding: 30px 0 40px 0;
 	}
 
-	.pdb80{
-		padding: 50px 0;
-	}
 	/* intro */
 	.intro-title, .about-clinic__title, .activite-lines__title, .steps__title, .pricelist__title,.help__title, .advantages__title, .faq__title, .faq__card-title, .review__title, .why__title, .license__title, .popup__title, .reviews-page__title, .photo-page__title, .doctors-page__title, .public__title, .faq-page__title{
 		font-size: 28px;
@@ -3971,6 +3983,11 @@ p.author__spec{
 	/* reviews-page */
 	.reviews-page__card{
 		flex-basis: 100%;
+	}
+
+	.reviews-page__button{
+		width: 100%;
+		margin-top: 15px;
 	}
 
 	/* photo-page */
