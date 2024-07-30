@@ -464,5 +464,4 @@ const textBlocks = document.querySelectorAll(".text-block");
         });
      }
 /* end popups */
-
 Fancybox.bind("[data-fancybox]", {});

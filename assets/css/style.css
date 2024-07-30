@@ -2247,7 +2247,6 @@ thead.mobile{
 	font-size: 13px;
 	line-height: 18.2px;
 	color: #323B44E5;
-	margin-bottom: 16px;
 }
 
 .photo-page__des p:last-child{
@@ -3136,6 +3135,16 @@ p.author__spec{
 	color: #8492B0CC;
 	font-size: 13px;
 	line-height: 16px;
+}
+
+.popup__politic a{
+	color: #8492B0CC;
+	text-decoration: underline;
+	transition: 0.3s;
+}
+
+.popup__politic a:hover{
+	color: #333;
 }
 
 .popup__form>* {
