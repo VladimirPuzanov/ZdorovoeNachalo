@@ -624,7 +624,7 @@ img{
 	transition: 0.3s;
 }
 
-.text-block b{
+.text-block b, .text-block strong{
 	font-weight: 700;
 }
 
