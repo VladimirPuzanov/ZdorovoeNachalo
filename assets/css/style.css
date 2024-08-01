@@ -373,6 +373,16 @@ img{
 	height: 0;
 }
 
+.form-link{
+	color: #8492B0CC;
+	text-decoration: underline;
+	transition: 0.3s;
+}
+
+.form-link:hover{
+	color: #333;
+}
+
 /* header */
 .header__contact{
 	display: flex;
