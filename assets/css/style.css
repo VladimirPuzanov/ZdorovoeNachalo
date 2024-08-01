@@ -3856,7 +3856,7 @@ p.author__spec{
 		list-style: none;
 	}
 
-	.text-block li::before {
+	.text-block ul li::before {
 		content: "•"; 
 		font-size: 14px;
 		font-weight: 700;
